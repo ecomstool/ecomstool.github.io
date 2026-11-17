@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — EcomsTool</title>
+  <meta name="description" content="Get help with EcomsTool extensions, report a fee mismatch, or request a feature.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/assets/logo.svg" alt="" width="28" height="28">EcomsTool</a>
+      <nav class="nav" aria-label="Main">
+        <a href="/#extensions">Extensions</a>
+        <a href="/support/" aria-current="page">Support</a>
+        <a href="/privacy/">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="doc">
+    <div class="wrap">
+      <h1>Support</h1>
+      <p class="lede">Something not right? Tell us. Fee mismatch reports are the fastest way we make the calculator more accurate.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:ecomstool@gmail.com?subject=EcomsTool%20support">Email support</a>
+        <a class="btn ghost" href="https://github.com/ecomstool/extensions/issues/new/choose">Report on GitHub</a>
+      </div>
+      <p class="small muted" style="margin-top:14px">When reporting a fee mismatch, include the ASIN, the price, and a screenshot of both the calculator and Amazon's Revenue Calculator for the same product.</p>
+
+      <h2>Common questions</h2>
+      <details>
+        <summary>Why doesn't a fee match Seller Central exactly?</summary>
+        <p>Most of the time the product page shows different dimensions or weight than the package Amazon actually measured. Open the product details line at the bottom of the panel and correct them; the fees recalculate instantly and are remembered for that product. If they still don't match, please send us a fee mismatch report.</p>
+      </details>
+      <details>
+        <summary>Which Amazon marketplaces are supported?</summary>
+        <p>amazon.com (US) only for now. Other marketplaces need their own fee tables and VAT rules, and we'd rather add them properly than approximately.</p>
+      </details>
+      <details>
+        <summary>How do I open the calculator?</summary>
+        <p>On an amazon.com product page, click the extension icon in your Chrome toolbar or press Alt+Shift+F. You can change the shortcut at chrome://extensions/shortcuts.</p>
+      </details>
+      <details>
+        <summary>How accurate are the monthly sales estimates?</summary>
+        <p>When Amazon shows a "bought in past month" label, the estimate is kept within that range. Otherwise it comes from the Best Sellers Rank for the product's category, which is a rough guide. You can always type your own number.</p>
+      </details>
+      <details>
+        <summary>Prices show in a different currency.</summary>
+        <p>If you've set Amazon to display prices in another currency, switch it back to USD in Amazon's currency settings. The calculator needs US dollar prices to apply US fees. Also make sure your delivery location is set to a US ZIP code.</p>
+      </details>
+      <details>
+        <summary>Is my data sent anywhere?</summary>
+        <p>No. Everything is calculated and stored in your browser. See the <a href="/fba-calculator/privacy/">privacy policy</a>.</p>
+      </details>
+      <details>
+        <summary>How do I delete my saved costs?</summary>
+        <p>In the panel, open Settings and choose Clear saved data. Uninstalling the extension also removes everything.</p>
+      </details>
+
+      <h2>Copy row column order</h2>
+      <p>Paste this header row into your sheet once, then use Copy row on each product:</p>
+      <table>
+        <tr><th>Columns</th></tr>
+        <tr><td>Date · ASIN · Title · Mode · Price · Unit cost · Referral fee · Fulfillment fee · Amazon fees · Net profit · ROI · Margin · Est. sales/mo · Monthly profit</td></tr>
+      </table>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="row">
+        <span>© 2026 EcomsTool · <a href="mailto:ecomstool@gmail.com">ecomstool@gmail.com</a></span>
+        <nav aria-label="Footer">
+          <a href="/support/">Support</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="https://github.com/ecomstool">GitHub</a>
+        </nav>
+      </div>
+      <p class="legal">EcomsTool is an independent developer and is not affiliated with, endorsed by, or sponsored by Amazon.com, Inc. Amazon and all related marks are trademarks of Amazon.com, Inc. or its affiliates.</p>
+    </div>
+  </footer>
+</body>
+</html>
